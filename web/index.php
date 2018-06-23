@@ -14,8 +14,8 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/static/style_main.css">
-	  <script src="../script_main.js"></script>
+    <link rel="stylesheet" href="/stylesheets/style_main.css">
+	  <script src="/views/script_main.js"></script>
   </head>
   <body>
   <div class="topnav" id="myTopnav">
@@ -49,8 +49,8 @@ function myFunction() {
 </script><br>
           <input type="text" name="email" placeholder="Talented ID">
           <input type="submit" name="submit" href="loggedIn.html" value="Login">
-          <a href="lostPassword.php">Lost your password?</a><br>
-          <a href="../signup.html">Don't have an account?</a>
+          <a href="#">Lost your password?</a><br>
+          <a href="/views/signup.html">Don't have an account?</a>
           <center><p> &copy; 2018 TalentEd</p></center> 
           <center><p> &copy; Powered by Inv Technologies.</p></center> 
         </form>
