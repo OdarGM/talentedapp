@@ -35,7 +35,7 @@
         <form>
           <input type="text" name="email" placeholder="Talented ID">
           <input type="password" placeholder="Password" id="myInput">
-	  <a href="/views/logged.php" target="rightframe"><input type="button" value="Login" /></a>
+	  <a href="/views/logged.html" target="rightframe"><input type="submit" value="Login" /></a>
           <a href="/views/lostPassword.php">Lost your password?</a><br>
           <a href="/views/signup.html">Don't have an account?</a>
           <center><p> &copy; 2018 TalentEd</p></center> 
