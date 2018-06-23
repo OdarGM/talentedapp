@@ -33,21 +33,8 @@
         <img src="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869" class="pic">
         <h1>TalentEd Login</h1>
         <form>
-
-          <input type="password" value="Password" id="myInput">
-		<p>Show Password</p>
-          <input type="checkbox" onclick="myFunction()">
-<script>
-function myFunction() {
-    var x = document.getElementById("myInput");
-    if (x.type === "password") {
-        x.type = "text";
-    } else {
-        x.type = "password";
-    }
-}
-</script><br>
           <input type="text" name="email" placeholder="Talented ID">
+          <input type="password" value="Password" id="myInput">
           <input type="submit" name="submit" href="loggedIn.html" value="Login">
           <a href="#">Lost your password?</a><br>
           <a href="/views/signup.html">Don't have an account?</a>
