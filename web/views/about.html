@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About TalentEd</title>
+  <link rel="icon" href="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869"> 
+<style>
+body {background: darkred;}
+  h1 {color: darkcyan;}
+  p {color: orange;}
+  li {color: orange;}
+  h2 {color: darkcyan;}
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+</style>
+  </head>
+<body>
+<center><h1>About TalentEd</h1></center>
+<hr width=1500 color=darkcyan>
+  <center><b><i><h2>What is TalentEd?</h2></i></b></center>
+<center><p>The project is called TalentEd, an online social media platform with the objective of sharing your talents, users will be able to upload images-photos demonstrating their skills, if another user views any of your uploads they can "talent" you.
+Talents are the amount of times other users have "talented" an upload of yours.
+Talenters are the total amount of users that "talented" an upload of yours. (not followers)
+Talenteds are the amount of talenteds you've given to other users.
+Followers, those who follow you.
+Followed, those whom you follow.
+The Talent Categories for now are:
+Arts, Music, Performance/Acting, Coding, DIY Items, Cooking, Sports
+Each user will choose the categories or category when creating their account.</p></center>
+<hr width=1500 color=darkcyan>
+
+<button class="accordion">Developer Team</button>
+<div class="panel">
+  <p>Jose Barranco ~ Lead Developer ~ Chief Executive Officer</p>
+  <p>Emil Barranco ~ Web Developer ~ Chief Technological Officer</p>
+  <p>David Acevedo ~ Android Developer ~ Mobile App Lead</p>
+  <p>Branden McKittrick ~ Consultant ~ Chief Operating Officer</p>
+  <p>ShivZ ~ Consultant ~ Developer</p>
+</div>
+
+<button class="accordion">Finances Team</button>
+<div class="panel">
+  <p>Glen Hellemans ~ Lead Investor ~ Chief Financial Officer</p>
+</div>
+
+<button class="accordion">Design Team</button>
+<div class="panel">
+  <p>Gabriela Lluberes ~ Lead Designer ~ Chief Design Officer</p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+  </script>
+</body>
+</html>
