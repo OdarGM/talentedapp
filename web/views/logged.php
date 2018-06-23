@@ -103,7 +103,7 @@
         <div class="useravatar">
             <img alt="User Profile Picture" src="https://www.shareicon.net/download/2016/05/26/771189_man_512x512.png">
         </div>
-        <div class="card-info"> <span class="card-title">Talented User</span>
+        Welcome <?php echo $_POST["name"]; ?>.<br />
 
         </div>
     </div>
