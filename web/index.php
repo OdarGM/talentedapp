@@ -35,7 +35,7 @@
         <form>
           <input type="text" name="email" placeholder="Talented ID">
           <input type="password" placeholder="Password" id="myInput">
-	  <input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="Put Your Text Here" onclick="window.location.href='http://www.mytalented.com/views.logged.html'" />
+	  <input style="width: 250px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: darkgrey; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="Login" onclick="window.location.href='http://www.mytalented.com/views/logged.html'" />
           <a href="/views/lostPassword.php">Lost your password?</a><br>
           <a href="/views/signup.html">Don't have an account?</a>
           <center><p> &copy; 2018 TalentEd</p></center> 
