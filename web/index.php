@@ -19,7 +19,7 @@
   </head>
   <body>
   <div class="topnav" id="myTopnav">
-  <a href="../about.html" class="active">About</a>
+  <a href="/views/about.html" class="active">About</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
