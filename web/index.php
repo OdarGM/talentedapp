@@ -33,7 +33,7 @@
         <img src="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869" class="pic">
         <h1>TalentEd Login</h1>
         <form action="logged.php" method="post">
-          <input type="text" name="username" placeholder="Talented ID" id="username">
+          <input type="text" name="name" placeholder="Talented ID" id="name">
           <input type="password" name="password" placeholder="Password" id="password">
           <input type="submit" value="Login">
           <a href="/views/lostPassword.php">Lost your password?</a><br>
