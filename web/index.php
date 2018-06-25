@@ -51,7 +51,7 @@ alert("Invalid Password")
         <form  method="post">
           <input type="text" name="id" placeholder="Talented ID" >
           <input type="password" name="pass" placeholder="Password">
-          <input type="button" value="Login">
+          <input type="submit" value="Login">
           <a href="/views/lostPassword.php">Lost your password?</a><br>
           <a href="/views/signup.html">Don't have an account?</a>
           <center><p> &copy; 2018 TalentEd</p></center> 
