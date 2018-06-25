@@ -24,7 +24,23 @@
     <i class="fa fa-bars"></i>
   </a>
 </div>
-	  
+</script>
+<script language="javascript">
+<!--//
+/*This Script allows people to enter by using a form that asks for a
+UserID and Password*/
+function pasuser(form) {
+if (form.id.value=="admin") { 
+if (form.pass.value=="admin") {              
+location="http://www.mytalented.com/views/logged.php" 
+} else {
+alert("Invalid Password")
+}
+} else {  alert("Invalid UserID")
+}
+}
+//-->
+</script>	  
 	  
 	  
 	  
@@ -66,23 +82,7 @@ return false;
 }
 }
 }
-</script>
-<script language="javascript">
-<!--//
-/*This Script allows people to enter by using a form that asks for a
-UserID and Password*/
-function pasuser(form) {
-if (form.id.value=="admin") { 
-if (form.pass.value=="admin") {              
-location="http://www.mytalented.com/views/logged.php" 
-} else {
-alert("Invalid Password")
-}
-} else {  alert("Invalid UserID")
-}
-}
-//-->
-</script>
+
 
   </body>
 </html>
