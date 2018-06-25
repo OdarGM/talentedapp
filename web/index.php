@@ -48,10 +48,10 @@ alert("Invalid Password")
       <div class="login-section">
         <img src="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869" class="pic">
         <h1>TalentEd Login</h1>
-        <form action="/views/logged.php" method="post">
+        <form  method="post">
           <input type="text" name="id" placeholder="Talented ID" >
           <input type="password" name="pass" placeholder="Password">
-          <input type="submit" value="Login">
+          <input type="button" value="Login">
           <a href="/views/lostPassword.php">Lost your password?</a><br>
           <a href="/views/signup.html">Don't have an account?</a>
           <center><p> &copy; 2018 TalentEd</p></center> 
