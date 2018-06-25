@@ -22,6 +22,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    position: center;
 }
 .card.hovercard {
     position: relative;
@@ -97,7 +98,7 @@
 <div class="col-lg-6 col-sm-6">
     <div class="card hovercard">
         <div class="card-background">
-            <img class="card-bkimg" alt="" src="http://lorempixel.com/100/100/people/9/">
+            
             <!-- http://lorempixel.com/850/280/people/9/ -->
         </div>
         <div class="useravatar">
