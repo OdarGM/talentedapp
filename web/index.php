@@ -25,22 +25,7 @@
   </a>
 </div>
 </script>
-<script language="javascript">
-<!--//
-/*This Script allows people to enter by using a form that asks for a
-UserID and Password*/
-function pasuser(form) {
-if (form.id.value=="admin") { 
-if (form.pass.value=="admin") {              
-location="http://www.mytalented.com/views/logged.php" 
-} else {
-alert("Invalid Password")
-}
-} else {  alert("Invalid UserID")
-}
-}
-//-->
-</script>	  
+	  
 	  
 	  
 	  
@@ -48,7 +33,7 @@ alert("Invalid Password")
       <div class="login-section">
         <img src="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869" class="pic">
         <h1>TalentEd Login</h1>
-        <form  method="post">
+        <form  action="/views/logged.php" method="post">
           <input type="text" name="id" placeholder="Talented ID" >
           <input type="password" name="pass" placeholder="Password">
           <input type="submit" value="Login">
