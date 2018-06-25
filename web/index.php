@@ -33,8 +33,8 @@
         <img src="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869" class="pic">
         <h1>TalentEd Login</h1>
         <form action="/views/logged.php" method="post">
-          <input type="text" name="name" placeholder="Talented ID" id="name">
-          <input type="password" name="password" placeholder="Password" id="password">
+          <input type="text" name="id" placeholder="Talented ID" >
+          <input type="password" name="pass" placeholder="Password">
           <input type="submit" value="Login">
           <a href="/views/lostPassword.php">Lost your password?</a><br>
           <a href="/views/signup.html">Don't have an account?</a>
@@ -66,6 +66,23 @@ return false;
 }
 }
 }
-	  </script>
+</script>
+<script language="javascript">
+<!--//
+/*This Script allows people to enter by using a form that asks for a
+UserID and Password*/
+function pasuser(form) {
+if (form.id.value=="admin") { 
+if (form.pass.value=="admin") {              
+location="http://www.mytalented.com/views/logged.php" 
+} else {
+alert("Invalid Password")
+}
+} else {  alert("Invalid UserID")
+}
+}
+//-->
+</script>
+
   </body>
 </html>
