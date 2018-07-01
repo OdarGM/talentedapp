@@ -3,15 +3,39 @@
 <head>
 <title>About TalentEd</title>
   <link rel="icon" href="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {background: darkred;}
-  h1 {color: darkcyan;}
-  p {color: orange;}
-  li {color: orange;}
-  h2 {color: darkcyan;}
+body {
+  background: #5cdb95; /*darkred */
+}
+  h1 {
+    color: #05386b; /*darkcyan */
+    font-size: 3rem;
+    top: 15px;
+    text-align: center;
+  }
+  p {
+    color: #edf5e1;  /*orange */
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .panel p{
+    color: #05386b;
+  }
+  li {
+    color: orange;  /*orange */
+  } 
+  h2 {
+    color: #05386b;;  /*darkcyan */
+    font-size: 2.7rem;
+  }
+
+  h4{
+    border-bottom: 3px solid #8ee4af;  /*darkcyan */
+  }
   .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #8ee4af;  /*#eee */
+    color: #05386b;  /*#444 */
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -19,17 +43,18 @@ body {background: darkred;}
     border: none;
     outline: none;
     transition: 0.4s;
+    font-size: 20px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: #ccc;  /*#ccc */
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: white;  /*white */
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -37,19 +62,63 @@ body {background: darkred;}
   .accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
-    color: #777;
+    color: #777;  /*#777 */
     float: right;
-    margin-left: 5px;
 }
 
 .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+
+a{
+  text-decoration: none;
+}
+
+.logo{
+  padding: 5px 10px;
+  font-size: 20px;
+  color: #edf5e1;
+  margin: 20px;
+  background-color: #05386b;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top: 20px;
+}
+
+.logo:hover{
+  color: #5cdb95;
+  background-color: #edf5e1;
+}
+
+.open{
+  background-color: #8ee4af;
+  border: none;
+  outline: none;
+  color: #edf5e1;
+  float: left;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 14px 16px;
+  width: 33%
+}
+
+.open:hover{
+  background-color: #edf5e1;;
+  color: #5cdb95;
+}
+
+.tabcnt{
+  color: #05386b;
+  display: none;
+  text-align: center;
+}
 </style>
   </head>
 <body>
-<center><h1>About TalentEd</h1></center>
-<hr width=1500 color=darkcyan>
+  <a class="logo" href="http://www.mytalented.com">TalentEd</a>
+<h1>About TalentEd</h1>
+<h4> </h4>
+<!-- <hr width=1500 color=darkcyan> -->
   <center><b><i><h2>What is TalentEd?</h2></i></b></center>
 <center><p>The project is called TalentEd, an online social media platform with the objective of sharing your talents, users will be able to upload images-photos demonstrating their skills, if another user views any of your uploads they can "talent" you.
 Talents are the amount of times other users have "talented" an upload of yours.
@@ -60,8 +129,73 @@ Followed, those whom you follow.
 The Talent Categories for now are:
 Arts, Music, Performance/Acting, Coding, DIY Items, Cooking, Sports
 Each user will choose the categories or category when creating their account.</p></center>
-<hr width=1500 color=darkcyan>
+<!-- <hr width=1500 color=darkcyan> -->
+<h4> </h4>
 
+<div class="tabcnt" id="dev-team">
+  <h2>Developer Team</h2>
+  <p>Jose Barranco ~ Lead Developer ~ Chief Executive Officer</p>
+  <p>Emil Barranco ~ Web Developer ~ Chief Technological Officer</p>
+  <p>David Acevedo ~ Android Developer ~ Mobile App Lead</p>
+  <p>Branden McKittrick ~ Consultant ~ Chief Operating Officer</p>
+  <p>ShivZ ~ Consultant ~ Developer</p>
+</div>
+<div class="tabcnt" id="fin-team">
+    <h2>Finances Team</h2>
+    <p>Glen Hellemans ~ Lead Investor ~ Chief Financial Officer</p>
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br> <!--Using this because Odar is idiot and doesn't know how to fix it-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p> </p>
+  </div>
+
+  <div class="tabcnt" id="dsgn-team">
+      <h2>Design Team</h2>
+      <p>Gabriela Lluberes ~ Lead Designer ~ Chief Design Officer</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br> <!--Using this because Odar is idiot and doesn't know how to fix it-->
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p> </p>
+  </div>
+
+    <button class="open" onclick="showTeam(`dev-team`, this, `#05386b`)" id="defshow">Developer Team</button>
+    <button class="open" onclick="showTeam(`fin-team`, this, `#05386b`)" id="defshow">Finances Team</button>
+    <button class="open" onclick="showTeam(`dsgn-team`, this, `#05386b`)" id="defshow">Design Team</button>
+
+    <script>
+        function showTeam(teamName, elmnt, color) {
+            var i, tabcnt, opens;
+            tabcnt = document.getElementsByClassName("tabcnt");
+            for (i = 0; i < tabcnt.length; i++) {
+              tabcnt[i].style.display = "none";
+            }
+            opens = document.getElementsByClassName("open");
+            for (i = 0; i < opens.length; i++) {
+              opens[i].style.backgroundColor = "";
+            }
+            document.getElementById(teamName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        
+        }
+        document.getElementById("defshow").click();
+        </script>
+    
+
+<!--
 <button class="accordion">Developer Team</button>
 <div class="panel">
   <p>Jose Barranco ~ Lead Developer ~ Chief Executive Officer</p>
@@ -80,7 +214,7 @@ Each user will choose the categories or category when creating their account.</p
 <div class="panel">
   <p>Gabriela Lluberes ~ Lead Designer ~ Chief Design Officer</p>
 </div>
-<script>
+<script> 
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -95,6 +229,6 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
-  </script>
+  </script> -->
 </body>
 </html>
