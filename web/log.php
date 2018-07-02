@@ -9,7 +9,7 @@ define('DB_NAME', 'heroku_c3aabcc7808faa7');
 /* Attempt to connect to MySQL database */
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
  
-// Check connection.
+// Check connection
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
