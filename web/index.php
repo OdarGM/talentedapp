@@ -119,9 +119,9 @@
   <body>
 <div id='cssmenu'>
 <ul>
-   <li class='active'><a href='#'>Home</a></li>
+   <li class='active'><a href='http://mytalented.com/'>Home</a></li>
    <li><a href='#'>Products</a></li>
-   <li><a href='#'>Company</a></li>
+   <li><a href='http://mytalented.com/views/about.html/'>About US</a></li>
    <li><a href='http://status.mytalented.com/'>Systems Status</a></li>
 </ul>
 </div>
