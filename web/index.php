@@ -126,7 +126,7 @@
 </ul>
 </div>
 	  
-	  <center><h2 style="color: white">Join Us! Show the world you're Talented!</h2></center>	  
+	  <center><h4 style="color: white">Join Us! Show the world you're Talented!</h4></center>	  
 	  
     <div class="content">
       <div class="login-section">
