@@ -135,7 +135,7 @@
 
 
     <div class="form">
-            <center><img src="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869></center>
+            <center><img src="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869"></center>
             <div class="buttons">
             <button id="login" class="active">Login</button> <button  id="register">Register</button>
         </div>
