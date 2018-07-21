@@ -14,15 +14,15 @@
 }
 
 .bg1 {
-  background: url("img/1.jpg");
+  background: url("/img/1.jpg");
 }
 
 .bg2 {
-  background: url("img/2.jpg");
+  background: url("/img/2.jpg");
 }
 
 .bg3 {
-  background: url("img/3.jpg");
+  background: url("/img/3.jpg");
 }
 
 .slide {
