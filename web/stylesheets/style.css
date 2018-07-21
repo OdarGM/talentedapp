@@ -59,11 +59,10 @@
 }
 
 
-.form  i{
-display:flex;
-justify-content: center;
-    margin-top:-40px;
-    color:rgba(206, 226, 253, 1);
+.form  img{
+   margin-top:-40px;
+    width:100px;
+    border-radius: 50%;
 }
 
 .form form input {
