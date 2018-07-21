@@ -75,7 +75,7 @@
   font-size: 15px;
   font-weight: 400;
   text-decoration: none;
-  color: #444444;
+  color: red;
   -webkit-transition: all .2s ease;
   -moz-transition: all .2s ease;
   -ms-transition: all .2s ease;
@@ -126,7 +126,7 @@
    <li><a href='http://status.mytalented.com/'>Systems Status</a></li>
 </ul>
 </div>
-<center><h4 style="color: white">Join Us! Show the world you're Talented!</h4></center>	  
+<center><h4 style="color: red">Join Us! Show the world you're Talented!</h4></center>	  
     <div class='background_container'>
         <div class='slide bg1'></div>
         <div class='slide bg2'></div>
