@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="/scripst/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
     
   <style>
       
@@ -135,12 +135,12 @@
 
 
     <div class="form">
-            <img src="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869">
+            <center><img src="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869%22%3E></center>
             <div class="buttons">
             <button id="login" class="active">Login</button> <button  id="register">Register</button>
         </div>
             <div class="login">
-        <form action="">
+        <form action="/views/logged.php" method="POST">
 <input type="text" placeholder="Username">
         </br>
 <input type="password" placeholder="Password">
@@ -149,7 +149,7 @@
 </form>
 </div>
 <div class="register">
-    <form action="">
+    <form action="newUser.php" method="POST">
 <input type="text" placeholder="Name"> <input type="text" placeholder="Name">
     </br>
 <input type="text" placeholder="Email"> <input type="text" placeholder="Confirm email">
