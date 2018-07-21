@@ -8,8 +8,11 @@
     <title>TalentEd | Login</title>
     <link rel="icon" href="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    
     <style>
-       body {background: url("https://www.freevector.com/uploads/vector/preview/9458/FreeVector-City-Skyscrapers-Buildings-Vector.jpg");}
+      
        @import url(http://fonts.googleapis.com/css?family=Raleway);
 #cssmenu,
 #cssmenu ul,
@@ -112,8 +115,8 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/stylesheets/style_main.css">
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="jquery.js"></script>
 	  
   </head>
   <body>
@@ -125,47 +128,86 @@
    <li><a href='http://status.mytalented.com/'>Systems Status</a></li>
 </ul>
 </div>
-	  
-	  <center><h4 style="color: white">Join Us! Show the world you're Talented!</h4></center>	  
-	  
-    <div class="content">
-      <div class="login-section">
-        <img src="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869" class="pic">
-        <h1>TalentEd LogIn</h1>
-        <form  action="/views/logged.php" method="post">
-          <input type="text" name="id" placeholder="Talented ID" >
-          <input type="password" name="pass" placeholder="Password">
-          <input type="submit" value="Login">
-          <a href="/views/lostPassword.php">Lost your password?</a><br>
-          <a href="/views/signup.html">Don't have an account?</a>
-          <center><p> &copy; 2018 TalentEd</p></center> 
-          <center><p> &copy; Powered by Inv Technologies.</p></center> 
-        </form>
-      </div>
+<center><h4 style="color: white">Join Us! Show the world you're Talented!</h4></center>	  
+    <div class='background_container'>
+        <div class='slide bg1'></div>
+        <div class='slide bg2'></div>
+        <div class='slide bg3'></div>
     </div>
-<script>
-	var attempt = 3; // Variable to count number of attempts.
-// Below function Executes on click of login button.
-function validate(){
-var username = document.getElementById("username").value;
-var password = document.getElementById("password").value;
-if ( username == "devtesting" && password == "devadmin"){
-alert ("Login successfully");
-window.location = "/views/logged.html"; // Redirecting to other page.
-return false;
-}
-else{
-attempt --;// Decrementing by one.
-alert("You have left "+attempt+" attempt;");
-// Disabling fields after 3 attempts.
-if( attempt == 0){
-document.getElementById("username").disabled = true;
-document.getElementById("password").disabled = true;
-document.getElementById("login").disabled = true;
-return false;
-}
-}
-}
+
+
+    <div class="form">
+            <img src="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869">
+            <div class="buttons">
+            <button id="login" class="active">Login</button> <button  id="register">Register</button>
+        </div>
+            <div class="login">
+        <form action="">
+<input type="text" placeholder="Username">
+        </br>
+<input type="password" placeholder="Password">
+    </br>
+    <button  class="btn">Log In</button>
+</form>
+</div>
+<div class="register">
+    <form action="">
+<input type="text" placeholder="Name"> <input type="text" placeholder="Name">
+    </br>
+<input type="text" placeholder="Email"> <input type="text" placeholder="Confirm email">
+</br>
+<input type="password" placeholder="Password"> <input type="password" placeholder="Confirm Password">
+<button class="btn">Register</button>
+</form>
+</div>
+</div>
+    <script>
+        $(document).ready(function () {
+            change_slide1();
+
+            function change_slide1() {
+                $('.bg1').removeClass('slide_out');
+                $('.bg2').addClass('slide_out');
+                window.setTimeout(function () {
+                    change_slide2()
+                }, 5000);
+            };
+
+            function change_slide2() {
+                $('.bg1').addClass('slide_out');
+                $('.bg2').removeClass('slide_out');
+                window.setTimeout(function () {
+                    change_slide1()
+                }, 5000);
+            }
+
+            function change_slide2() {
+                $('.bg3').addClass('slide_out');
+                $('.bg2').removeClass('slide_out');
+                window.setTimeout(function () {
+                    change_slide1()
+                }, 5000);
+            }
+    
+    $("#login").click(function(){
+        $(".register").fadeOut(500);
+        $(".login").delay(1000).fadeIn(1500);
+        $("#login").addClass("active")
+        $("#register").removeClass("active")
+
+    });
+
+    $("#register").click(function(){
+        $(".login").fadeOut(500);
+        $(".register").delay(1000).fadeIn(1500);
+        $("#login").removeClass("active")
+        $("#register").addClass("active")
+    });
+
+    
+        });
+
+    </script>
 
 
   </body>
