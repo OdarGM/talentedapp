@@ -147,6 +147,7 @@
     </br>
     <button  class="btn">Log In</button>
 </form>
+    <p>&copy;Talented 2018</p>
 </div>
 <div class="register">
     <form action="newUser.php" method="POST">
@@ -157,6 +158,7 @@
 <input type="password" placeholder="Password"> <input type="password" placeholder="Confirm Password">
 <button class="btn">Register</button>
 </form>
+<p>&copy;Talented 2018</p>
 </div>
 </div>
     <script>
