@@ -1,234 +1,201 @@
-<!DOCTYPE html>
 <html>
-<head>
-<title>About TalentEd</title>
-  <link rel="icon" href="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  background: #5cdb95; /*darkred */
-}
-  h1 {
-    color: #05386b; /*darkcyan */
-    font-size: 3rem;
-    top: 15px;
-    text-align: center;
-  }
-  p {
-    color: #edf5e1;  /*orange */
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-  .panel p{
-    color: #05386b;
-  }
-  li {
-    color: orange;  /*orange */
-  } 
-  h2 {
-    color: #05386b;;  /*darkcyan */
-    font-size: 2.7rem;
-  }
+    <head>
+        <link rel="shortcut icon" type="image/png" href="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869"/>
+        <meta charset="utf-8">
+        <meta content="About us - TalentEd" property="og:title">
 
-  h4{
-    border-bottom: 3px solid #8ee4af;  /*darkcyan */
-  }
-  .accordion {
-    background-color: #8ee4af;  /*#eee */
-    color: #05386b;  /*#444 */
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    font-size: 20px;
-}
+        <meta content="The project is called TalentEd, an online social media platform with the objective of sharing your talents, users will be able to upload images-photos demonstrating their skills, if another user views any of your uploads they can 'talent' you. Talents are the amount of times other users have 'talented' an upload of yours. Talenters are the total amount of users that 'talented' an upload of yours. (not followers) Talenteds are the amount of talenteds you've given to other users. Followers, those who follow you. Followed, those whom you follow. The Talent Categories for now are: Arts, Music, Performance/Acting, Coding, DIY Items, Cooking, Sports Each user will choose the categories or category when creating their account." property="og:description">
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-    background-color: #ccc;  /*#ccc */
-}
+        <meta content="Talented About" property="og:site_name">
 
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-    padding: 0 18px;
-    background-color: white;  /*white */
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-  .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;  /*#777 */
-    float: right;
-}
-
-.active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-
-a{
-  text-decoration: none;
-}
-
-.logo{
-  padding: 5px 10px;
-  font-size: 20px;
-  color: #edf5e1;
-  margin: 20px;
-  background-color: #05386b;
-  font-family: Arial, Helvetica, sans-serif;
-  position: relative;
-  top: 20px;
-}
-
-.logo:hover{
-  color: #5cdb95;
-  background-color: #edf5e1;
-}
-
-.open{
-  background-color: #8ee4af;
-  border: none;
-  outline: none;
-  color: #edf5e1;
-  float: left;
-  cursor: pointer;
-  font-size: 17px;
-  padding: 14px 16px;
-  width: 33%
-}
-
-.open:hover{
-  background-color: #edf5e1;;
-  color: #5cdb95;
-}
-
-.tabcnt{
-  color: #05386b;
-  display: none;
-  text-align: center;
-}
-</style>
-  </head>
-<body>
-  <a class="logo" href="http://www.mytalented.com">TalentEd</a>
-<h1>About TalentEd</h1>
-<h4> </h4>
-<!-- <hr width=1500 color=darkcyan> -->
-  <center><b><i><h2>What is TalentEd?</h2></i></b></center>
-<center><p>The project is called TalentEd, an online social media platform with the objective of sharing your talents, users will be able to upload images-photos demonstrating their skills, if another user views any of your uploads they can "talent" you.
-Talents are the amount of times other users have "talented" an upload of yours.
-Talenters are the total amount of users that "talented" an upload of yours. (not followers)
-Talenteds are the amount of talenteds you've given to other users.
-Followers, those who follow you.
-Followed, those whom you follow.
-The Talent Categories for now are:
-Arts, Music, Performance/Acting, Coding, DIY Items, Cooking, Sports
-Each user will choose the categories or category when creating their account.</p></center>
-<!-- <hr width=1500 color=darkcyan> -->
-<h4> </h4>
-
-<div class="tabcnt" id="dev-team">
-  <h2>Developer Team</h2>
-  <p>Jose Barranco ~ Lead Developer ~ Chief Executive Officer</p>
-  <p>Emil Barranco ~ Web Developer ~ Chief Technological Officer</p>
-  <p>David Acevedo ~ Android Developer ~ Mobile App Lead</p>
-  <p>Branden McKittrick ~ Consultant ~ Chief Operating Officer</p>
-  <p>ShivZ ~ Consultant ~ Developer</p>
-</div>
-<div class="tabcnt" id="fin-team">
-    <h2>Finances Team</h2>
-    <p>Glen Hellemans ~ Lead Investor ~ Chief Financial Officer</p>
-    <br> 
-    <br>
-    <br>
-    <br>
-    <br> <!--Using this because Odar is idiot and doesn't know how to fix it-->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p> </p>
-  </div>
-
-  <div class="tabcnt" id="dsgn-team">
-      <h2>Design Team</h2>
-      <p>Gabriela Lluberes ~ Lead Designer ~ Chief Design Officer</p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br> <!--Using this because Odar is idiot and doesn't know how to fix it-->
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <p> </p>
-  </div>
-
-    <button class="open" onclick="showTeam(`dev-team`, this, `#05386b`)" id="defshow">Developer Team</button>
-    <button class="open" onclick="showTeam(`fin-team`, this, `#05386b`)" id="defshow">Finances Team</button>
-    <button class="open" onclick="showTeam(`dsgn-team`, this, `#05386b`)" id="defshow">Design Team</button>
-
-    <script>
-        function showTeam(teamName, elmnt, color) {
-            var i, tabcnt, opens;
-            tabcnt = document.getElementsByClassName("tabcnt");
-            for (i = 0; i < tabcnt.length; i++) {
-              tabcnt[i].style.display = "none";
+        <meta content="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869" property="og:image">
+        <style>
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="./scripts/ascript.js"></script>
+        <style>
+            body{
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin: 0;
+                background-color: #212121;
+                color: white;
+                text-align: center;
+                user-select: none;
             }
-            opens = document.getElementsByClassName("open");
-            for (i = 0; i < opens.length; i++) {
-              opens[i].style.backgroundColor = "";
+            img{
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                -webkit-user-drag: none;
+                -webkit-touch-callout: none;
+                transition-duration: 2s;
             }
-            document.getElementById(teamName).style.display = "block";
-            elmnt.style.backgroundColor = color;
-        
-        }
-        document.getElementById("defshow").click();
-        </script>
-    
+            .container{
+                width: 70%;
+                display: block;
+                margin: 0 auto;
+                overflow: hidden;
+                background-color: #333333;
+                margin-top: 0;
+                padding-left: 15%;
+                padding-right: 15%;
+                height: 100%;
+            }
+            p{
+                font-size: 130%;
+                color: #dedede
+            }
+            .staff-container{
+                margin-top: -32px;
+            }
+            .staff-box{
+                background-color: #87a851;
+                height: 120;
+                width: 400;
+                border-radius: 15px;
+                margin: 0 auto;
+                box-shadow:  4px 4px 15px 1px rgba(0, 0, 0)
+            }
+            .image-box{
+                height: 80%;
+                width: auto;
+                border-radius: 100%;
+                margin: 10px;
+                float: left;
+            }
+            a{
+                text-decoration: none;
+            }
+            a p {
+                color: #212121;
+                font-size: 180%;
+            }
+            th{
+                width: 5%;
+                transition-duration: 0.5s;
+            }
+            th:hover{
+                background-color: #dedede;
+            }
+            table{
+                height: 7%;
+            }
+            #actual{
+                background-color: #dedede;
+            }
+            .box{
+                padding: 5%;
+                padding-top: 0;
+                width: 80%;
+                background-color: #87a851;
+                margin: 0 auto;
+                border-radius: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top" name="Jeff" style="align-items: center; height: 100%; background-image: url('https://image.ibb.co/j1tVMK/Sin_t_tulo_1.png'); background-position: center; background-size: auto 100%; background-repeat: no-repeat">
+            <table>
+                <tr>
+                    <th>
+                        <a href="http://www.mytalented.com/">
+                            <p>Home</p>
+                        </a>  
+                    </th>
+                    <th>
+                        <a href="#">
+                            <p>Products</p>
+                        </a>  
+                    </th>
+                    <th id="actual">
+                        <a href="#">
+                            <p>About us</p>
+                        </a>  
+                    </th>
+                    <th>
+                        <a href="http://status.mytalented.com">
+                            <p>System's status</p>
+                        </a>  
+                    </th>
+                </tr>
+            </table>
+            
+            <div class="title">
+                <h1 style="font-family:Arial, Helvetica, sans-serif; padding-top: 15%;padding-bottom: 15%; color: #212121;" name="Juan">
+                    ABOUT
+                </h1>
+                <a href="#" onclick="Down()">
+                    <img src="https://image.ibb.co/c1pUgK/down_arrow_1.png" height="50px" class="despacito">
+                </a>
+            </div>
+        </div>
+            <div class="container" id="Jeffrey">
+                <div class="about-frame" style="padding-top: 20%;">
+                    <h1 style="float: right; width: 50%;" name="John">
+                        What's TalentEd?
+                    </h1>
+                    <img src="https://image.ibb.co/gzXJ8z/saxophone.png" id="img" width="35%" name="Peter" style="float: left;vertical-align: middle;">
+                    <p style="float: right; width: 50%;" name="John">
+                        The project is called TalentEd, an online social media platform with the objective of sharing your talents, users will be able to upload images-photos demonstrating their skills, if another user views any of your uploads they can "talent" you. Talents are the amount of times other users have "talented" an upload of yours. Talenters are the total amount of users that "talented" an upload of yours. (not followers) Talenteds are the amount of talenteds you've given to other users. Followers, those who follow you. Followed, those whom you follow. The Talent Categories for now are: Arts, Music, Performance/Acting, Coding, DIY Items, Cooking, Sports Each user will choose the categories or category when creating their account.
+                    </p>
+                </div>
+            </div>
+                <div class="staff-container">
+                    <h1 style="padding: 2%;font-size: 200%;">
+                        Our team
+                    </h1>
+                    <div class="box">
+                        <h2 style="padding: 5%;">
+                            Developers
 
-<!--
-<button class="accordion">Developer Team</button>
-<div class="panel">
-  <p>Jose Barranco ~ Lead Developer ~ Chief Executive Officer</p>
-  <p>Emil Barranco ~ Web Developer ~ Chief Technological Officer</p>
-  <p>David Acevedo ~ Android Developer ~ Mobile App Lead</p>
-  <p>Branden McKittrick ~ Consultant ~ Chief Operating Officer</p>
-  <p>ShivZ ~ Consultant ~ Developer</p>
-</div>
-
-<button class="accordion">Finances Team</button>
-<div class="panel">
-  <p>Glen Hellemans ~ Lead Investor ~ Chief Financial Officer</p>
-</div>
-
-<button class="accordion">Design Team</button>
-<div class="panel">
-  <p>Gabriela Lluberes ~ Lead Designer ~ Chief Design Officer</p>
-</div>
-<script> 
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-  </script> -->
-</body>
+                        </h2>
+                        <div class="staff-box">
+                            <img src="https://images.vexels.com/media/users/3/145908/preview2/52eabf633ca6414e60a7677b0b917d92-fabricante-de-avatar-masculino.jpg" class="image-box">
+                            <p style="text-align: left;padding: 10px;">
+                                Jose Barranco
+                            </p>
+                            <p style="text-align: left;margin-top: -16; font-size: 120%">
+                                Lead Developer 
+                            </p>
+                        </div>
+                        <div class="staff-box">
+                            <img src="https://images.vexels.com/media/users/3/145908/preview2/52eabf633ca6414e60a7677b0b917d92-fabricante-de-avatar-masculino.jpg" class="image-box">
+                            <p style="text-align: left;padding: 10px;">
+                                Emil Barranco
+                            </p>
+                            <p style="text-align: left;margin-top: -16; font-size: 120%">
+                                Web Developer
+                            </p>
+                        </div>
+                        <div class="staff-box">
+                            <img src="https://images.vexels.com/media/users/3/145908/preview2/52eabf633ca6414e60a7677b0b917d92-fabricante-de-avatar-masculino.jpg" class="image-box">
+                            <p style="text-align: left;padding: 10px;">
+                                David Acevedo
+                            </p>
+                            <p style="text-align: left;margin-top: -16; font-size: 120%">
+                                Android Developer 
+                            </p>
+                        </div>
+                        <div class="staff-box">
+                            <img src="https://images.vexels.com/media/users/3/145908/preview2/52eabf633ca6414e60a7677b0b917d92-fabricante-de-avatar-masculino.jpg" class="image-box">
+                            <p style="text-align: left;padding: 10px;">
+                                Branden McKittrick
+                            </p>
+                            <p style="text-align: left;margin-top: -16; font-size: 120%">
+                                Consultant
+                            </p>
+                        </div>
+                        <div class="staff-box">
+                            <img src="https://images.vexels.com/media/users/3/145908/preview2/52eabf633ca6414e60a7677b0b917d92-fabricante-de-avatar-masculino.jpg" class="image-box">
+                            <p style="text-align: left;padding: 10px;">
+                        ShivZ
+                    </p>
+                    <p style="text-align: left;margin-top: -16; font-size: 120%">
+                        Consultant 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
