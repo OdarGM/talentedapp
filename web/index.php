@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="/scripts/jquery.js"></script>
+   
     
   <style>
       
@@ -140,10 +141,10 @@
             <button id="login" class="active">Login</button> <button  id="register">Register</button>
         </div>
             <div class="login">
-        <form action="/views/logged.php" method="POST">
-<input type="text" placeholder="Username">
+        <form action="/views/logged.php" method="POST" name="iAccInput">
+<input type="text" name="iName" maxlength="10" placeholder="Username">
         </br>
-<input type="password" placeholder="Password">
+<input type="password" name="iAccID" placeholder="Password">
     </br>
     <button  class="btn">Log In</button>
 </form>
@@ -208,7 +209,44 @@
         });
 
     </script>
+<script language="javascript">
+function Getstats()
+{
+window.status=('Attempting to Login to user area.')
 
+var AccId;
+var iName;
+AccId = document.iAccInput.iAccID.value
+iName = document.iAccInput.iName.value
 
+if (AccId == "" || iName == "")
+{
+alert('\nERROR\nYou must enter ALL Details,\nto continue.\n');
+window.status=('Missing data or Invalid. Check spelling and ensure user/password are in written properly.')
+} else {
+  var location = '';
+//if (iName=='Alphi' && CryptoJS.SHA1(AccId)=='9d989e8d27dc9e0ec3389fc855f142c3d40f0c50') 
+  if (iName =='Alphi' && AccId=='adminuser'
+    location=("/views/logged.php");
+}
+else if (iName=='Alphi' && AccId=='adminuser2') {
+    location=("page2.html");
+}
+else alert('Wrong input');
+
+this.location.href = location;
+}
+JScriptCodeDom.CodeParseException: Unexcepted Token : Identity:location , Requires QuoteEnd , Line 3, Char 12 ---> System.Exception: Unexcepted Token : Identity:location , Requires QuoteEnd
+   at JScriptCodeDom.CodeParser.ReadAndCheckToken(CodeTokenType equalto)
+   at JScriptCodeDom.CodeParser.ParseIfStatement()
+   at JScriptCodeDom.CodeParser.InternalParseStatementCore()
+   at JScriptCodeDom.CodeParser.InternalParseStatement()
+   at JScriptCodeDom.CodeParser.ParseStatement()
+   at JScriptCodeDom.CodeParser.ParseBlock()
+   at JScriptCodeDom.CodeParser.Parse(String code, String filename, Int32 lineoffset, Boolean keeplinenum)
+   at JScriptCodeDom.CodeParser.Parse(String code, String filename, Int32 lineoffset, Boolean keeplinenum)
+   at ProtectorV1.Protect(String[] codes)
+   at ProtectorV1.Protect(String code)
+   at ASP.javascript_obfuscator_aspx.Button1_Click(Object sender, EventArgs e)
   </body>
 </html>
