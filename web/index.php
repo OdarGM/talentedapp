@@ -164,31 +164,7 @@
 </div>
     <script>
         $(document).ready(function () {
-            change_slide1();
-
-            function change_slide1() {
-                $('.bg1').removeClass('slide_out');
-                $('.bg2').addClass('slide_out');
-                window.setTimeout(function () {
-                    change_slide2()
-                }, 5000);
-            };
-
-            function change_slide2() {
-                $('.bg1').addClass('slide_out');
-                $('.bg2').removeClass('slide_out');
-                window.setTimeout(function () {
-                    change_slide1()
-                }, 5000);
-            }
-
-            function change_slide2() {
-                $('.bg3').addClass('slide_out');
-                $('.bg2').removeClass('slide_out');
-                window.setTimeout(function () {
-                    change_slide1()
-                }, 5000);
-            }
+           
     
     $("#login").click(function(){
         $(".register").fadeOut(500);
