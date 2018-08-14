@@ -137,9 +137,9 @@
             <div class="login">
         <form action="/views/logged.php" method="POST" name="iAccInput">
 <input type="text" name="iName" maxlength="10" placeholder="Username">
-        </br>
+        <br>
 <input type="password" name="iAccID" placeholder="Password">
-    </br>
+    <br>
     <button  class="btn">Log In</button>
 </form>
     <p>&copy;Talented 2018</p>
@@ -147,9 +147,9 @@
 <div class="register">
     <form action="newUser.php" method="POST">
 <input type="text" placeholder="Name"> <input type="text" placeholder="Name">
-    </br>
+    <br>
 <input type="text" placeholder="Email"> <input type="text" placeholder="Confirm email">
-</br>
+<br>
 <input type="password" placeholder="Password"> <input type="password" placeholder="Confirm Password">
 <button class="btn">Register</button>
 </form>
