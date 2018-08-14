@@ -1,0 +1,29 @@
+{
+  "name": "talentedapp",
+  "version": "0.0.1",
+  "description": "Social Media Platform",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    “postinstall”: “grunt sass:production”
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdcoding01/talentedappr"
+  },
+  "author": "Alphi",
+  "license": "MIT",
+  "bugs": {
+    "url": "Nothing yet"
+  },
+  "homepage": "http://mytalented.com/",
+  "dependencies": {
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*"
+  }
+}
