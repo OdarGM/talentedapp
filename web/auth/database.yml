@@ -1,0 +1,7 @@
+    ...
+    development:
+      <<: *default
+      database: pusher-widget_development // add this line if it isn't already there
+      username: database_user // add this line
+      password: user_password // add this line
+    ...
