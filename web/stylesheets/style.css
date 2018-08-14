@@ -23,18 +23,7 @@ body {
   opacity: 0;
 }
 
-.form {
-  background: rgba(1, 16, 36, 0.5);
-  width: 500px;
-  height: 450px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -200px;
-  margin-left: -250px;
-  border-radius: 25px;
-  transition:1.5s;
-}
+
 
 .login{
   text-align: center;
