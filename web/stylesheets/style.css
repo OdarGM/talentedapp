@@ -124,7 +124,7 @@ background: rgb(1, 16, 36,.5);
   padding-top: 5%;
 }
 
-@media all and (max-width: 500px) { 
+@media all and (max-width: 800px) { 
 
 .form{
   left:0%;
