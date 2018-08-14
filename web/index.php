@@ -127,12 +127,8 @@
    <li><a href='http://status.mytalented.com/'>Systems Status</a></li>
 </ul>
 </div>
-
-    <div class='background_container'>
-        <div class='slide bg1'></div>
-    </div>
-
-
+<center><h4 style="color: red">Join Us! Show the world you're Talented!</h4></center>	  
+  
     <div class="form">
             <center><img src="https://cdn.glitch.com/2510be4b-441e-4689-8be2-29be95d39431%2Fnewlogo.png?1529281742869"></center>
             <div class="buttons">
