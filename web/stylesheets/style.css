@@ -9,13 +9,10 @@
   top: 0px;
   left: 0px;
   transition: 1s ease;
-}
-
-body {
   background: url("/img/1.jpg") center center no-repeat;
-  background-size: cover;
-
+background-size: cover;
 }
+
 
 .form {
   background: rgba(1, 16, 36, 0.5);
