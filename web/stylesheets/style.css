@@ -3,9 +3,6 @@
   padding: 0;
 }
 
-.background_container {
-
-}
 
 body{
    width: 100%;
@@ -127,4 +124,19 @@ background: rgb(1, 16, 36,.5);
   padding-top: 5%;
 }
 
+@media all and (max-width: 500px) { 
+
+.form{
+  left:0%;
+  width: 100%;
+  position: relative;
+  margin-top:150px;
+  margin-left:0px;
+  height:700px
+}
+
+
+
+
+}
 
