@@ -130,8 +130,6 @@
 <center><h4 style="color: red">Join Us! Show the world you're Talented!</h4></center>	  
     <div class='background_container'>
         <div class='slide bg1'></div>
-        <div class='slide bg2'></div>
-        <div class='slide bg3'></div>
     </div>
 
 
