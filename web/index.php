@@ -127,7 +127,7 @@
    <li><a href='http://status.mytalented.com/'>Systems Status</a></li>
 </ul>
 </div>
-<center><h4 style="color: red">Join Us! Show the world you're Talented!</h4></center>	  
+
     <div class='background_container'>
         <div class='slide bg1'></div>
     </div>
