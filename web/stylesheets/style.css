@@ -13,9 +13,9 @@
 }
 
 body {
-  background: url("/img/1.jpg");
+  background: url("/img/1.jpg") center center no-repeat;
   background-size: cover;
-  background-position: center center;
+
 }
 
 .form {
